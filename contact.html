@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台湾まぜそば紹介ページ</title>
+    <meta name="description" content="おすすめの店や食べ方、台湾まぜそばについて">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<body>
+    <div class="bg-color">
+        <header class="wrapper">
+            <h1 class="align-center">
+                    <img src="images/stick.jpg" alt="お箸と手のアイコン">
+                    <span>台湾まぜそば紹介ページ</span>
+            </h1>
+            <div class="bg-img"></div>
+            <nav class="NavMenu">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="method.html">食べ方</a></li>
+                    <li><a href="reco.html">おすすめ</a></li>
+                    <li><a href="other.html">その他</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="Toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </header>
+    </div>
+    <nav class="sticky-nav">
+        <ul class="sticky-ul">
+            <li><a href="index.html" class="btn bgskew"><span>TOP</span></a></li>
+            <li><a href="method.html" class="btn bgskew"><span>食べ方</span></a></li>
+            <li><a href="reco.html" class="btn bgskew"><span>おすすめ</span></a></li>
+            <li><a href="other.html" class="btn bgskew"><span>その他</span></a></li>
+            <li><a href="contact.html" class="btn bgskew"><span>お問い合わせ</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="align-center">
+            <h2 class="page-title contact-title">お問い合わせ</h2>
+            <form action="form.php" method="post"  class="h-adr">
+                <div>
+                    <h2><label for="name">名前</label></h2><br>
+                    <input type="text" placeholder="大阪  太郎" class="name">
+                </div>
+                <div>
+                    <span class="p-country-name" style="display:none;">Japan</span>
+                    <!-- <fieldset> -->
+                    <h2>住所</h2>
+                    郵便番号：<input type="text" class="p-postal-code" size="3" maxlength="3" required name="zip1"> -
+                    <input type="text" class="p-postal-code" size="4" maxlength="4" required name="zip2"><br>
+                    都道府県：<input type="text" class="p-region" readonly name="region"><br>
+                    市区町村：<input type="text" class="p-locality p-street-address" readonly name="locality"><br>
+                    丁目番地：<input type="text" class="p-extended-address" required name="ex_address1"><br>
+                    建物など：<input type="text" class="p-extended-address" name="ex_address2">
+                    <!-- </fieldset> -->
+                </div>
+                <br>
+                <div>
+                    <h2><label for="mail">メールアドレス</label></h2><br>
+                    <input type="mail" class="mail">
+                </div>
+                <div>
+                    <h2><label for="message">メッセージ</label></h2><br>
+                    <input type="textarea" class="text">
+                </div>
+                <br>
+                <input type="submit" value="送信" class="submit">
+            </form>
+        </div>
+
+        <div id="pageTop"><a href="#">TOP</a></div>
+    </main>
+    <footer>
+        <small>&copy;LaLaメイツ</small>
+    </footer>
+</body>
+</html>

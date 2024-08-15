@@ -1,0 +1,583 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+body {
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.bottom-red {
+    border-bottom: 2px solid red;
+}
+
+#pageTop a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-decoration: none;
+    line-height: 70px;
+    color: black;
+    background-color: red;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+}
+
+
+/* ヘッダー部分 */
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    align-items: center;
+}
+
+.bg-color {
+    background-color: orange;
+}
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+    line-height: 1.4;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header a {
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+}
+
+h1 span {
+    margin-left: 10px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* メイン部分 */
+
+/* top */
+.welcome {
+    margin: 50px 0;
+}
+
+.about-title {
+    font-size: 3rem;
+    width: 390px;
+    margin-bottom: 5rem;
+}
+
+.about-sub-title {
+    margin-bottom: 6rem;
+}
+
+.about-sub-title h4 {
+    border-bottom: 2px solid red;
+    width: 210px;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+
+.right {
+    text-align: right;
+}
+
+.about-img {
+    width: 300px;
+    height: 200px;
+}
+
+/* スライドショー */
+#slide {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+
+#slide ul {
+    position: absolute;
+    width: 3000px;
+}
+
+#slide li {
+    float: left;
+    width: 1000px;
+    list-style-type: none;
+}
+
+button {
+    opacity: .6;
+    transition: opacity .2s;
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 225px;
+    left: 20px;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 225px;
+    right: 20px;
+}
+
+/* method */
+.method-title {
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0;
+}
+
+.method {
+    font-size: 35px;
+    width: 250px;
+}
+
+.bottom-red-long {
+    border-bottom: 2px solid red;
+    width: 350px;
+}
+
+.mazeru {
+    width: 400px;
+    height: 250px;
+}
+
+/* other */
+.quiz-wrap {
+    border: 7px solid black;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.quiz-title {
+    text-align: center;
+    font-size: 60px;
+    margin: 80px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    width: 60vw;
+    height: 50vh;
+    margin: 100px auto;
+    margin-bottom: 0;
+    padding: 50px 50px 0 50px;
+}
+
+.card .choice {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card .choice button {
+    border: 1px solid rgba(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    outline: none;
+    color: #fff;
+    width: 150px;
+    background-color: brown;
+}
+
+#dialog {
+    width: 250px;
+    margin: auto;
+    margin-top: 40vh;
+    padding: 30px 20px;
+    display: none;
+    text-align: center;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 4px;
+}
+
+
+/* reco */
+.reco-img {
+    width: 400px;
+    height: 300px;
+}
+
+.reco-p {
+    margin-bottom: 40px;
+}
+.reco-section {
+    margin-bottom: 70px;
+}
+
+.reco-title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+
+.reco-shop {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.reco-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* contact */
+.contact-title {
+    margin-bottom: 70px;
+}
+
+input {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.name {
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 50px;
+}
+
+.mail {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.text {
+    width: 100%;
+    max-width: 700px;
+    height: 8rem;
+}
+
+.submit {
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.h-adr {
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+/* フッター部分 */
+footer {
+    background-color: orange;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    /* header部分 */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        font-size: 5rem;
+    }
+
+    /* フッター部分 */
+    footer {
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    h1 {
+        width: 400px;
+        font-size: 20px;
+    }
+    h1 img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ハンバーガーメニュー */
+    .sticky-ul {
+        display: none;
+    }
+
+    .Toggle {
+        display: block;
+        position: fixed;
+        /* bodyに対しての絶対位置指定 */
+        right: 13px;
+        top: 30px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .Toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px #000;
+        -webkit-transition: .35s ease-in-out;
+        /*変化の速度を指定*/
+        -moz-transition: .35s ease-in-out;
+        /*変化の速度を指定*/
+        transition: .35s ease-in-out;
+        /*変化の速度を指定*/
+        left: 6px;
+    }
+
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+    /* 最初のspanをマイナス45度に */
+    .Toggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    /* 2番目と3番目のspanを45度に */
+    .Toggle.active span:nth-child(2),
+    .Toggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #fade {
+        display: none;
+    }
+    nav.NavMenu {
+        /*表示位置を固定*/
+        position: fixed;
+        /*重ね順を変更*/
+        z-index: 2;
+        /*表示位置を指定*/
+        top: 0;
+        /*表示位置を指定*/
+        left: 0;
+        /*背景を白にする*/
+        background: #fff;
+        /*文字色を黒にする*/
+        color: #000;
+        /*テキストを中央揃え*/
+        text-align: center;
+        /*全幅表示*/
+        width: 100%;
+
+        /*ナビを右に隠す*/
+        transform: translateX(100%);
+        /*ナビを左に隠す*/
+        /* transform: translateX(-100%); */
+        /*ナビを上に隠す*/
+        /* transform: translateY(-100%); */
+        /*アニメーションの時間を指定*/
+        transition: all 0.6s;
+    }
+
+    nav.NavMenu ul {
+        background: green;
+        /*背景をグレーにする*/
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav.NavMenu ul li {
+        font-size: 1.2em;
+        font-weight: bold;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px dotted #333;
+    }
+
+    nav.NavMenu ul li:last-child {
+        padding-bottom: 0;
+
+        /*最後のメニュー項目のみ下線を消す*/
+        border-bottom: none;
+    }
+
+    nav.NavMenu ul li a {
+        display: block;
+        /*クリックできる領域を広げる*/
+        color: #000;
+        padding: 1em 0;
+    }
+
+    nav.NavMenu.active {
+        transform: translateY(0%);
+        /*ナビを表示する*/
+    }
+}
+
+    @media (min-width: 750px) {
+
+    nav.NavMenu {
+        display: none;
+    }
+
+    /* スティッキーヘッダーの部分 */
+    nav {
+        text-decoration: none;
+    }
+
+    .sticky-ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .sticky-ul li {
+        font-size: 20px;
+        list-style: none;
+        width: 20%;
+    }
+
+    .sticky-ul a {
+        color: #fff;
+        text-align:center;
+        display:block;
+        text-decoration:none;
+        background:#AD3231;
+        padding:25px 0;
+        border-right:1px solid #D84544;
+    }
+
+    /* ナブボタンをホバーしたときのアクション */
+    .btn {
+        /*アニメーションの起点とするためrelativeを指定*/
+        position: relative;
+        overflow: hidden;
+        /*ボタンの形状*/
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid #555;/* ボーダーの色と太さ */
+        padding: 10px 30px;
+        text-align: center;
+        outline: none;
+        /*アニメーションの指定*/
+        transition: ease .2s;
+    }
+
+    /*ボタン内spanの形状*/
+    .btn span {
+        position: relative;
+        z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+        color:white;
+    }
+
+    .btn:hover span {
+        color:#fff ;
+    }
+
+    /*== 背景が流れる（斜め） */
+    .bgskew::before {
+        content: '';
+        /*絶対配置で位置を指定*/
+        position: absolute;
+        top: 0;
+        left: -130%;
+        /*色や形状*/
+        background:#333;
+        width:120%;
+        height: 100%;
+        transform: skewX(-25deg);
+    }
+
+    /*hoverした時のアニメーション*/
+    .bgskew:hover::before {
+        animation: skewanime .5s forwards;/*アニメーションの名前と速度を定義*/
+    }
+
+    @keyframes skewanime {
+        100% {
+        left:-10%;/*画面の見えていない左から右へ移動する終了地点*/
+        }
+    }
+    }
+
